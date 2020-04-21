@@ -18,9 +18,20 @@ public class MySweetProgarm {
 		names.push("Caleb");
 		names.push("Sue");
 		names.push("Sally");
-		// push is stack
-		System.out.println(names.remove());
-		System.out.println(names.remove());
-		System.out.println(names.remove());
+		ListIterator<String> it =names.listIterator();
+		it.next();
+		it.next();
+		it.add("Susan");
+		//names.add(2,"Susan"); 
+		//System.out.println(it.next());
+		
+		while(it.hasNext())
+			System.out.println(it.next());
+		
+		for (String s :names)
+		{
+			System.out.println(s);
+		}
+		
 	}
 }
